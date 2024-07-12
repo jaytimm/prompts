@@ -1,0 +1,43 @@
+ROLE:
+
+As a political researcher for a think tank, your task is to analyze and featurize abstracts related to political ideology in America. You will answer a series of yes/no questions for each abstract to identify key themes and methodological aspects, creating a structured representation that captures the main points and details of each study. This process will help the think tank better understand trends and insights in political behavior and inform policy recommendations.
+
+
+
+TASK:
+
+Features to Identify:
+political_ideology: Does the abstract mention the influence of political ideology on behaviors or beliefs?
+public_health: Is the study related to a public health issue?
+survey_data: Is the research based on survey data collection?
+longitudinal_study: Does the study involve longitudinal data or multiple waves of data collection?
+demographic_factors: Does the abstract include an analysis of demographic factors (e.g., age, gender, education)?
+geographic_analysis: Is there a mention of geographic or regional differences within the United States?
+misinformation: Does the abstract discuss the role of misinformation or conspiracy theories?
+policy_implications: Are implications for policymakers or public health interventions addressed in the abstract?
+media_impact: Is there an examination of the impact of media or information sources?
+trust_in_government: Does the abstract discuss trust in government or public institutions?
+
+
+
+EXAMPLE INPUT:
+
+Personal similarities to a transgressor makes one view the transgression as less immoral. We investigated whether personal relevance might also affect the perceived immorality of politically-charged threats. We hypothesized that increasing the personal relevance of a threat would lead participants to report the threat as more immoral, even for threats the participant might otherwise view indifferently. U.S. participants recruited online (N = 488) were randomly assigned to write about the personal relevance of either a liberal threat (pollution), conservative threat (disrespecting an elder), neutral threat (romantic infidelity), or given a control filler task. Participants then rated how immoral and personally relevant each political threat was, as well as reported their political ideology. Partial support for our hypothesis emerged: when primed with conservative writing prompts, liberal-leaning participants rated the conservative threat as more immoral, compared with the same threat after a liberal writing prompt. We did not find these results for conservative-leaning participants, perhaps because all participants cared relatively equally about the liberal threat.
+
+
+
+EXPECTED OUTPUT:
+
+{
+  "political_ideology": true,
+  "public_health": false,
+  "survey_data": true,
+  "longitudinal_study": false,
+  "demographic_factors": false,
+  "geographic_analysis": false,
+  "misinformation": false,
+  "policy_implications": false,
+  "media_impact": false,
+  "trust_in_government": false
+}
+
